@@ -15,4 +15,69 @@ CHIP Mux16 {
 
     PARTS:
     // Put your code here:
+    Not(in=sel,out=not-sel);
+
+    And(a=a[0],b=not-sel,out=a-0-out);
+    And(a=b[0],b=sel,out=b-0-out);
+    Or(a=a-0-out,b=b-0-out,out=out[0]);
+    
+    And(a=a[1],b=not-sel,out=a-1-out);
+    And(a=b[1],b=sel,out=b-1-out);
+    Or(a=a-1-out,b=b-1-out,out=out[1]);
+    
+    And(a=a[2],b=not-sel,out=a-2-out);
+    And(a=b[2],b=sel,out=b-2-out);
+    Or(a=a-2-out,b=b-2-out,out=out[2]);
+    
+    And(a=a[3],b=not-sel,out=a-3-out);
+    And(a=b[3],b=sel,out=b-3-out);
+    Or(a=a-3-out,b=b-3-out,out=out[3]);
+    
+    And(a=a[4],b=not-sel,out=a-4-out);
+    And(a=b[4],b=sel,out=b-4-out);
+    Or(a=a-4-out,b=b-4-out,out=out[4]);
+    
+    And(a=a[5],b=not-sel,out=a-5-out);
+    And(a=b[5],b=sel,out=b-5-out);
+    Or(a=a-5-out,b=b-5-out,out=out[5]);
+    
+    And(a=a[6],b=not-sel,out=a-6-out);
+    And(a=b[6],b=sel,out=b-6-out);
+    Or(a=a-6-out,b=b-6-out,out=out[6]);
+    
+    And(a=a[7],b=not-sel,out=a-7-out);
+    And(a=b[7],b=sel,out=b-7-out);
+    Or(a=a-7-out,b=b-7-out,out=out[7]);
+    
+    And(a=a[8],b=not-sel,out=a-8-out);
+    And(a=b[8],b=sel,out=b-8-out);
+    Or(a=a-8-out,b=b-8-out,out=out[8]);
+    
+    And(a=a[9],b=not-sel,out=a-9-out);
+    And(a=b[9],b=sel,out=b-9-out);
+    Or(a=a-9-out,b=b-9-out,out=out[9]);
+    
+    And(a=a[10],b=not-sel,out=a-10-out);
+    And(a=b[10],b=sel,out=b-10-out);
+    Or(a=a-10-out,b=b-10-out,out=out[10]);
+    
+    And(a=a[11],b=not-sel,out=a-11-out);
+    And(a=b[11],b=sel,out=b-11-out);
+    Or(a=a-11-out,b=b-11-out,out=out[11]);
+    
+    And(a=a[12],b=not-sel,out=a-12-out);
+    And(a=b[12],b=sel,out=b-12-out);
+    Or(a=a-12-out,b=b-12-out,out=out[12]);
+    
+    And(a=a[13],b=not-sel,out=a-13-out);
+    And(a=b[13],b=sel,out=b-13-out);
+    Or(a=a-13-out,b=b-13-out,out=out[13]);
+    
+    And(a=a[14],b=not-sel,out=a-14-out);
+    And(a=b[14],b=sel,out=b-14-out);
+    Or(a=a-14-out,b=b-14-out,out=out[14]);
+    
+    And(a=a[15],b=not-sel,out=a-15-out);
+    And(a=b[15],b=sel,out=b-15-out);
+    Or(a=a-15-out,b=b-15-out,out=out[15]);
 }
